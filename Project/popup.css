@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    130deg,
+    rgb(135, 171, 99) 0%,
+    rgb(63, 173, 96) 100%
+  );
+  overflow: hidden;
+}
+.popup_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.my-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.cancel {
+  background-color: grey;
+}
+.save {
+  background-color: green;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button[type='button']:focus,
+button[type='save']:focus {
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.label {
+  display: block;
+  margin-bottom: 13px;
+  font-size: large;
+  font-weight: 600;
+  color: floralwhite;
+}
+
+.popup_close_button {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}

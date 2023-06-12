@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Section</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup_container">
+      <form class="my-form">
+        <h2>Input Form</h2>
+
+        <label class="label" for="amount">Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="number" />
+
+        <label class="label" for="time">Time</label>
+        <input type="datetime-local" id="time" name="time" required />
+
+        <label class="label" for="additional_info">Additional Info</label>
+        <input
+          type="text"
+          id="additional_info"
+          name="additional_info"
+          placeholder="Info"
+        />
+
+        <label class="label" for="created_at">Created At</label>
+        <input
+          type="datetime-local"
+          id="created_at"
+          name="created_at"
+          required
+        />
+
+        <div class="button-container">
+          <button class="cancel" type="button">Cancel</button>
+          <button class="save" type="save">Save</button>
+        </div>
+      </form>
+      <div class="popup_close_button">
+        <button><ion-icon name="close"></ion-icon></button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
